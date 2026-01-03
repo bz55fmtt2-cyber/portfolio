@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #FCF2EB;
+  color: #003255;
+  line-height: 1.7;
+}
+
+
+/* header */
+.header {
+  background-color: #FCF2EB;
+}
+
+.header-inner {
+  max-width: 1324px;
+  height: 90px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ロゴ */
+
+.logo {
+  font-size: 16px;
+  font-weight: 500;
+  color: #002840;
+}
+
+/* 戻る */
+
+.detail-header {
+  padding: 16px;
+}
+
+.back-btn {
+  font-size: 14px;
+  color: #003255;
+  text-decoration: none;
+}
+
+.back-btn:hover {
+  color: #FF8300;
+}
+
+
+/* ===== works detail ===== */
+
+.work-detail {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+/* セクション共通 */
+.work-detail section {
+  margin-bottom: 96px;
+}
+
+/* 見出し */
+.work-detail h2 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  border-left: 4px solid #003255;
+  padding-left: 12px;
+}
+
+/* ===== FV ===== */
+.work-fv {
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.work-fv img {
+  max-width: 100%;
+  margin-bottom: 32px;
+}
+
+.work-fv h1 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.work-lead {
+  font-size: 16px;
+  color: #555;
+}
+
+/* ===== 制作概要 ===== */
+.work-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.work-info li {
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.work-info span {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* ===== 文章 ===== */
+.work-detail p {
+  line-height: 1.8;
+  font-size: 15px;
+  color: #333;
+}
+
+/* ===== 画像 ===== */
+
+.works-mockup img {
+  border: 1px solid #333;
+}
+
+.mockup-pc img {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.works-mockup p {
+  font-size: 15px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .header-inner {
+    height: 60px;
+    padding: 0 16px;
+  }
+
+  .logo {
+    font-size: 14px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .works-mockup img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+}
