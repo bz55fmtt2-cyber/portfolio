@@ -144,10 +144,6 @@ body {
     font-size: 14px;
   }
 
-  .hamburger {
-    display: none;
-  }
-
   .works-mockup img {
     max-width: 100%;
     object-fit: cover;

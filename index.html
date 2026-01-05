@@ -24,6 +24,7 @@
       </button>
 
       <nav class="sp-nav" id="sp-nav">
+        <button class="close-btn" id="close-btn">×</button>
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#skill">Skill</a></li>
@@ -191,7 +192,7 @@
           お気軽にお問い合わせください。
         </p>
 
-        <a href="mailto:xxxx@example.com" class="contact-btn">
+        <a href="https://lin.ee/4TYEWZd" class="contact-btn" target="_blank" rel="noopener">
           お問い合わせする
         </a>
       </div>
@@ -202,17 +203,27 @@
   <script>
     const hamburger = document.getElementById('hamburger');
     const spNav = document.getElementById('sp-nav');
+    const closeBtn = document.getElementById('close-btn');
     const navLinks = spNav.querySelectorAll('a');
 
     hamburger.addEventListener('click', () => {
       spNav.classList.toggle('active');
+      hamburger.classList.add('hide');
     });
+
+    closeBtn.addEventListener('click', () => {
+      spNav.classList.remove('active');
+      hamburger.classList.remove('hide');
+    });
+
 
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
         spNav.classList.remove('active');
+        hamburger.classList.remove('hide');
       });
     });
+    
   </script>
 
 </body>
